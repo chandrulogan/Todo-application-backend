@@ -13,7 +13,9 @@ app.use(express.json());
 const authRouters = require('./routes/authRouter');
 const todoListRouters = require('./routes/todoListRouter');
 
-
+app.get('/', (req, res) => {
+    res.send('Hello, World!');
+});
 app.use('/auth/v1', authRouters)
 app.use('/todolist/v1', todoListRouters)
 
