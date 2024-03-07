@@ -8,6 +8,6 @@ router.route('/todo-list/:userId').get( todoListController.findMyTodoList)
 router.route('/todo-list/find-one/:listId').get(todoListController.findOneTodoList)
 router.route('/todo-list/update/:id').post( todoListController.editMyTodoList)
 router.route('/todo-list/status-update').post( todoListController.updateTodoListStatus)
-router.route('/todo-list').delete( todoListController.deleteTodoList)
+router.route('/todo-list/:id').delete( todoListController.deleteTodoList)
 
 module.exports = router

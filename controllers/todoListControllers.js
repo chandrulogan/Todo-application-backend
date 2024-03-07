@@ -170,7 +170,7 @@ exports.updateTodoListStatus = async (req, res) => {
 
 exports.deleteTodoList = async (req, res) => {
     try {
-        const { id } = req.body;
+        const { id } = req.params;
         const deletedData = await todoList.deleteOne({ _id: id })
 
         res.status(200).json({
