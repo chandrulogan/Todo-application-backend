@@ -16,4 +16,4 @@ function validateToken(token) {
     }
 }
 
-module.exports = {generateToken, validateToken}
+module.exports = { generateToken, validateToken }
